@@ -1,14 +1,6 @@
 import pytest
 import yaml
 
-from homework.calculator import Calculator
-
-
-@pytest.fixture(autouse=True, scope="module")
-def get_calc():
-    calc = Calculator()
-    yield calc
-
 
 def get_datas():
     with open('E:/py1/testing/datas/calc.yml') as f:
